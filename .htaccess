@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|resources|rosbots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+
+Redirect 301 /industry-insights/1226/europe-polyacrylamide-market-price-value  https://www.graphicalresearch.com/industry-insights/1226/europe-polyacrylamide-market
+Redirect 301 /industry-insights/1229/air-compressor-asia-pacific-market https://www.graphicalresearch.com/industry-insights/1223/asia-pacific-air-compressor-market
+Redirect 301 /industry-insights/1232/north-america-air-compressor-market https://www.graphicalresearch.com/table-of-content/1227/north-america-air-compressor-Market
+Redirect 301 /industry-insights/1226/europe-polyacrylamide-market https://www.graphicalresearch.com/industry-insights/1220/europe-polyacrylamide-market

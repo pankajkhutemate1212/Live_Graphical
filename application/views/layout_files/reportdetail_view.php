@@ -1,5 +1,12 @@
 <?php error_reporting(0); ?>
 <style>
+.button.secondary:hover{
+	
+background-color:#259b24;
+}
+.button.secondary{
+	box-shadow:1px 5px 11px #cacaca;
+}
 h2, h3{
 	
 	font-size:16px !important;
@@ -358,89 +365,72 @@ if($cname=="table-of-content"){ ?>
          $count_img = substr_count($summary, '<img');
 
        for($i =0 ; $i < $count_img; $i++) {
-
+           
            if($i==0){
-
+               
             $testcase = substr($summary, strpos($summary,"<img"));
-
+            
               }
             else {
-
-            $testcase= substr($summary,strripos($summary,'<p style="text-align:center">Get more details on this report - <a class="button btncustomreq sum-reqbtn" href='));
-
+                
+            $testcase= substr($summary,strripos($summary,'<p style="text-align:center">Get more details on this report - <b><a class="button secondary" href='));
              }
-
+             
+             /*$aaa=substr($testcase, strpos($testcase, '<img'));
+              
+             $img_html = substr($testcase, strpos($testcase, '<img'), stripos($aaa, '" />')).'" />';
+         
+     $summary= str_replace($img_html, $img_html.'<p style="text-align:center">Get more details on this report - <b><a class="button secondary" href="'.base_url().'request-sample/detail/'.$inserted_id.'?sum=img">Request Free Sample PDF</a></b><br /></p>',$summary);*/
+     
      $aaa=substr($testcase, strpos($testcase, '<img'));
-    			$img_html1 = substr($testcase, strpos($testcase, '<img'), stripos($aaa, '" />')+4);
-				 $img_html1 = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $img_html1);
-				 
-				 $myschemaimage =  substr($img_html1, -92, -4);
-           
+				$img_html1 = substr($testcase, strpos($testcase, '<img'), stripos($aaa, '" />')+4);
+				$img_html1 = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $img_html1);
+				$myschemaimage =  substr($img_html1, -92, -4);
 				$myschemaimage_schema=substr(substr($img_html1,strpos($img_html1, 'src="')+5),0,strpos(substr($img_html1,strpos($img_html1, 'src="')+5), '"'));
 				
-			
 				$img_html=substr($testcase, strpos($testcase, '<img'),stripos($aaa,'</p>')).'</p>';
 				$img_html_check=substr($testcase, strpos($testcase, '<img'),stripos($aaa,'</p>
-<p style="text-align:center">Get more details on this report - <a href="')).'</p>';
+<p style="text-align:center">Get more details on this report - <b><a href="')).'</p>';
 if(stripos($aaa,'</p>
-<p style="text-align:center">Get more details on this report - <a href="')==false){
-
-
+<p style="text-align:center">Get more details on this report - <b><a href="')==false){
+	
+				
 				if(strpos($img_html,'</strong>'))
 				{
 					if(strpos($img_html,'</u></strong></em>'))
 					{
-						$summary= str_replace($img_html, $img_html1.'</u></strong></em></p></br>
-<p style="text-align:center">Get more details on this report - <a class="button secondary" style="font-size:14px;background-color: #259b24 !important;
-    color: white !important;box-shadow: 1px 1px 14px 3px #00000029;margin:0;
-    " href="'.base_url().'request/'.$reports['id'].'/sample?sum=img">Request Free Sample PDF</a>
-&nbsp;</p>',$summary);
+						$summary= str_replace($img_html, $img_html1.'</u></strong></em></p>
+<p style="text-align:center">Get more details on this report - <b><a class="button secondary"  href="'.base_url().'request/'.$reports['id'].'/sample?sum=img">Request Free Sample PDF</a></b><br />
+</p>',$summary);
+							
 					}
 					elseif(strpos($img_html,'</u></strong>'))
 					{
-
 						$summary= str_replace($img_html, $img_html1.'</u></strong></p>
-<p style="text-align:center">Get more details on this report - <a class="button secondary" style="font-size:14px;    background-color: #259b24 !important;
-    color: white !important;margin:0;
-    " href="'.base_url().'request/'.$reports['id'].'/sample?sum=img">Request Free Sample PDF</a>
-&nbsp;</p>',$summary);
+<p style="text-align:center">Get more details on this report - <b><a class="button secondary"  href="'.base_url().'request/'.$reports['id'].'/sample?sum=img">Request Free Sample PDF</a></b><br />
+</p>',$summary);
 					}
 					elseif(strpos($img_html,'</u></em></strong>'))
 					{
 						$summary= str_replace($img_html, $img_html1.'</u></em></strong></p>
-<p style="text-align:center">Get more details on this report - <a class="button secondary" style="font-size:14px;    background-color: #259b24 !important;
-    color: white !important;margin:0;
-    " href="'.base_url().'request/'.$reports['id'].'/sample?sum=img">Request Free Sample PDF</a>
-&nbsp;</p>',$summary);
+<p style="text-align:center">Get more details on this report - <b><a class="button secondary" href="'.base_url().'request/'.$reports['id'].'/sample?sum=img">Request Free Sample PDF</a></b><br />
+</p>',$summary);
 					}
 					else
 					{
 						$summary= str_replace($img_html, $img_html1.'</strong></p>
-<p style="text-align:center">Get more details on this report - <a class="button secondary" style="font-size:14px;background-color: #259b24 !important;
-    color: white !important;margin:0;
-    " href="'.base_url().'request/'.$reports['id'].'/sample?sum=img">Request Free Sample PDF</a>
-&nbsp;</p>',$summary);
-					}
+<p style="text-align:center">Get more details on this report - <b><a class="button secondary"  href="'.base_url().'request/'.$reports['id'].'/sample?sum=img">Request Free Sample PDF</a></b><br />
+</p>',$summary);  
+					} 
 				}
-                elseif(strpos($img_html,'</p>'))
-                {
-
-                    $summary= str_replace($img_html, $img_html1.'</p>
-<p style="text-align:center">Get more details on this report - <a class="button secondary" style="font-size:14px;    background-color: #259b24 !important;
-    color: white !important;margin:0;
-    " href="'.base_url().'request/'.$reports['id'].'/sample?sum=img">Request Free Sample PDF</a>
-&nbsp;</p>',$summary);
-                }
 				else
 				{
 					$summary= str_replace($img_html, $img_html1.'</p>
-<p style="text-align:center">Get more details on this report - <a class="button secondary" style="font-size:14px;    background-color: #259b24 !important;
-    color: white !important;box-shadow: 1px 1px 14px 3px #00000029;margin:0;
-    " href="'.base_url().'request/'.$reports['id'].'/sample?sum=img">Request Free Sample PDF</a>
-&nbsp;</p>',$summary);
+<p style="text-align:center">Get more details on this report - <b><a class="button secondary" href="'.base_url().'request/'.$reports['id'].'/sample?sum=img">Request Free Sample PDF</a></b><br />
+</p>',$summary);
 				}
-       }
-
+       } 
+       
        } ?>			
                     <p class="text-body-1"><?php echo $summary; ?></p>
 <?php }  ?>

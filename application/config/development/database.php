@@ -75,17 +75,16 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '142.93.206.135',
+	/*'hostname' => '142.93.206.135',
 	'username' => 'admin_rootvikas',
 	'password' => 'rBuBAG2HSM',
 	'database' => 'admin_dba_192',
+	'dbdriver' => 'mysqli',*/
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'admin_dba_192',
 	'dbdriver' => 'mysqli',
-	/*'hostname' => 'localhost',
-	'username' => 'vikas',
-	'password' => 'password',
-	'database' => 'graphica_super_adm_root',
-	'dbdriver' => 'mysqli',
-	*/
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),

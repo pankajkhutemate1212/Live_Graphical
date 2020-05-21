@@ -1,5 +1,48 @@
 <?php error_reporting(0); ?>
+
+
+
 <style>
+
+.blink {
+	-webkit-animation: blink .90s linear infinite;
+	-moz-animation: blink .90s linear infinite;
+	-ms-animation: blink .90s linear infinite;
+	-o-animation: blink .90s linear infinite;
+	 animation: blink .90s linear infinite;
+}
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-o-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+
 .button.secondary:hover{
 	
 background-color:#259b24;
@@ -301,7 +344,7 @@ function closeNav() {
            
             <a href="<?php echo base_url('request/'.$reports['id'].'/sample') ?>" class="button secondary  button-hide" style="font-size:14px;    background-color: #259b24 !important;
     color: white !important;
-    "> <span class="blink_me "><svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" height="12" viewBox="0 0 23 20" width="17">
+    "> <span class="blink "><svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" height="12" viewBox="0 0 23 20" width="17">
     <path d="M16 13h-3V3h-2v10H8l4 4 4-4zM4 19v2h16v-2H4z"></path>
     <path d="M0 0h24v24H0z" fill="none"></path>
 </svg>&nbsp;Request a sample</span></a>

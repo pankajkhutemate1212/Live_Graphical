@@ -22,14 +22,29 @@
       
  public function Secure_cHeckout_pay($lic, $rep_id)
     {
+	  /*$paylinkcheck=$this->input->get('d');
+
 	  
+      $data['reports'] = $this->report_model->purchase_get_report($rep_id);
+     
+     $data['rep_lic']=0;
+     	if($lic == 1)
+	 	{
+	 		$data['rep_lic']=1;
+	 	}
+	  $data['title'] = 'Buy Now | Secure Payment Process';
+	  $data['description'] = 'Buy Now | Secure Payment Process';
+	  $data['keywords'] = 'Buy Now | Secure Payment Process';
+	  $data['content'] = 'layout_files/payment_form';
+	  $this->load->view('master_files/master_layout', $data);*/
 	  
-      $paylinkcheck=$this->input->get('d');
+	  $paylinkcheck=$this->input->get('d');
 	   
 	  $data['paylinkd']=$paylinkcheck;
 	  if($paylinkcheck=="y"){
 		  
 	 $data['reports']= $this->report_model->get_rep_detail_id_from_pay_links_table($rep_id);
+	 $data['reports']['meta_title']= $data['reports']['name'];
 	 
 	 
 		 
@@ -48,6 +63,7 @@
 	  $data['keywords'] = 'Buy Now | Secure Payment Process';
 	  $data['content'] = 'layout_files/payment_form';
 	  $this->load->view('master_files/master_layout', $data);
+	  
 	}
       
   }

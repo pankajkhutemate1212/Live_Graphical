@@ -12,7 +12,7 @@ redirect('paylinklogin/logout');
 <html>
 	<head>
 	<meta name="robots" value="noindex" />
-<link rel="shortcut icon" href="https://beta.graphicalresearch.com/assets/images/favicon.png">
+<link rel="shortcut icon" href="https://www.graphicalresearch.com/assets/images/favicon.png">
    <meta name="robots" value="nofollow" />
 	</head>
 	<body>

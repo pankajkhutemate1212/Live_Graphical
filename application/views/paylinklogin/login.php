@@ -1,4 +1,4 @@
- <html>
+<html>
  <head>
  	<style>
 	.login_submit_btn{
@@ -14,14 +14,14 @@
 	 
 	</style>
 <meta name="robots" value="noindex" />
-<link rel="shortcut icon" href="https://beta.graphicalresearch.com/assets/images/favicon.png">
+<link rel="shortcut icon" href="https://www.graphicalresearch.com/assets/images/favicon.png">
    <meta name="robots" value="nofollow" />
  </head>
 <body>
 <div class="">
 <div style="margin-top: 20%; background: lightgrey;   padding: 30px;">
 	<div id="infoMessage" style="color:red; text-align:center"><?php echo $message;?></div>
-<center><img src="https://beta.graphicalresearch.com/assets/images/brand-name.jpg" style="height: 64px;margin: 18px;"></center>
+<center><img src="https://www.graphicalresearch.com/assets/images/brand-name.jpg" style="height: 64px;margin: 18px;"></center>
 
 <?php echo form_open("paylinklogin/login");?>
 <div style="width: 24%; margin: auto;">

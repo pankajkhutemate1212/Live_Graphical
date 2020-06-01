@@ -10,7 +10,7 @@
 <body>
 	<div class="container" style="width: 1170px;margin: 0 auto;">
   <div style="display:inline-block;width:49%">
-  <img src="https://beta.graphicalresearch.com/assets/images/brand-name.jpg" style="height:102px;">
+  <img src="https://graphicalresearch.com/assets/images/brand-name.jpg" style="height:102px;">
   </div>
   
   <div style="display:inline-block;width:50%;vertical-align:top;text-align:right;">

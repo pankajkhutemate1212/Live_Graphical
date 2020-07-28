@@ -285,7 +285,7 @@
             
         <div class="top-bar-left no-collapse">
           <ul class="menu menu-menubar" style="
-    margin-top: 4px !important !important;
+    margin-top: 4px !important;
 ">
               <a href="https://www.graphicalresearch.com/" style="float: left;">  <li class="menu-text text-title " role="menuitem" >
                 
@@ -345,6 +345,7 @@
           </ul>
         </div>
       </div>
+
     </div>
       </header>
 	  
@@ -362,26 +363,38 @@
   
  
 
-<div class="medium-12" style=" margin-top: 19px;">
-  
-    <span style="font-size: 41px;cursor:pointer;color: #1769aa;margin-right: 33px;float: right;margin-top:-5px;/* border: 1px solid; *//* border-radius: 32px; */"  onclick="openNav()" style="display: none;">&#9776; </span><a href="https://graphicalresearch.com/"><span> <img src="https://graphicalresearch.com/assets/images/brand-name.jpg" style="height: 54px;margin-left: 9px; "></span></a>
-</div>
+<div class="row medium-12 small-12  columns" style="">
 
+  <div class="medium-4  small-4 columns">
+    <p><a href="https://graphicalresearch.com/"><span> <img src="https://graphicalresearch.com/assets/images/brand-name.jpg" style="height: 50px;/* padding: 0 0px; */margin: 3px 0px;"></span></a></p>
+  </div>
+  <div class="medium-4 small-4 columns">
+    <li style="
+    display: inline-block;
+"><form class="hero-search-filter-form onoff" action="https://graphicalresearch.com/search" method="get">
 
-<li style="display:inline-block"> <form class="hero-search-filter-form onoff" action="https://graphicalresearch.com/search" method="get">
-
-                                <input id="search_data_mobile" name="findtext" class="hero-search-filter-form-find responsive-input" type="text" value="" placeholder="Search Report" onkeyup="liveSearchMobile()" autocomplete="off" style="height: 45px;border:1px solid #1769aa;width: 286px;margin-left: 46px;margin-top: 11px;">
+                                <input id="search_data_mobile" name="findtext" class="hero-search-filter-form-find responsive-input" type="text" value="" placeholder="Search Report" onkeyup="liveSearchMobile()" autocomplete="off" style="/* height: 45px; *//* border:1px solid #1769aa; */width: 116px; margin-left: -33px;margin-top: -4px;">
                                 <button class="button search-btn-back responsive-button" style="
    
-    margin-left: -54px;
-    margin-top: 10px;
+   /* margin-left: -54px; */
+   margin-top: -5px;
+   height: 41px;
 
 "><svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" height="19" viewBox="0 0 24 24" width="24">
                                         <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
                                         <path d="M0 0h24v24H0z" fill="none"></path>
                                     </svg></button>
-                            </form>
-                            </li>
+                            </form></li>
+  </div>
+  <div class="medium-4 small-4 columns ">
+    <p><span style="font-size: 24px;/* cursor:pointer; */color: #1769aa;/* margin-right: 33px; */float: right;/* margin-top:-5px; *//* border: 1px solid; *//* border-radius: 32px; */" onclick="openNav()">☰ </span></p>
+  </div>
+
+   
+</div>
+
+
+
 						     <div id="autoSuggestionsListMobile" class="">
                                 <div id="autoSuggestionsListMobile">
 

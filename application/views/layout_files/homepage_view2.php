@@ -50,7 +50,7 @@ h2.no-background{position:relative;overflow:hidden;text-align:center;font-weight
 <style>
 
 
-		.center-hr,.left-hr{width:7%;margin:10px auto;border-color:#C15E6E;border-width:2px;margin-top:5px;margin-bottom:17px}.left-hr{float:left}@media screen and (max-width: 600px){.small-3{width:50%;margin-top:0}.small-4{width:100%;margin-top:0}.cardN{margin-top:12px}}
+		.center-hr,.left-hr{width:7%;margin:10px auto;border-color:#C15E6E;border-width:2px;margin-top:5px;margin-bottom:17px}.left-hr{float:left}@media screen and (max-width: 600px){.small-3{width:50%;margin-top:0}.small-4{margin-top:0}.cardN{margin-top:12px}}
 
 
 		<!--category-css-->

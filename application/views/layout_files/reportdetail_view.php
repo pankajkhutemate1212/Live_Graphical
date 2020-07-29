@@ -325,6 +325,7 @@ function closeNav() {
 }
 </script>
 <div class="row">
+  <div class="small-12 medium-12 columns">
       <div class=" breadcrumbs"> 
      
             <ul>
@@ -332,27 +333,36 @@ function closeNav() {
                 <li><a href="<?php echo base_url('/industry-insights/'.$category['url']);?>"><?php echo $category['name']; ?></a></li>
     <li><?php echo  substr($reports['name'],0,100); ?>...</li>
             </ul>
-    </div>
+    </div></div>
 
-    <div class="medium-12 columns end">
-        <h1 class="market-research-report-title" style="padding-top: 0;"><?php echo $reports['name']; ?><br>    
-      </h1>
-         <span class="text-caption">
+     
+
+    <div class="medium-12 small-12 columns">
+        <h1 class="market-research-report-title" style="/* padding-top: 0; */padding: 0px 16px;"><?php echo $reports['name']; ?><br> 
+          <span class="text-caption">
              Published Date: <?php echo date('F Y',$reports['publish_date']);?> | Publisher: Graphical Research 
              Report ID: GR<?php echo $reports['id']; ?> | Delivery : PDF
         </span>
-        <div class="medium-6" style="float: right;" >
-           
-            <a href="<?php echo base_url('request/'.$reports['id'].'/sample') ?>" class="button secondary  button-hide" style="font-size:14px;    background-color: #259b24 !important;
+
+         <a href="http://localhost/github/Live_Graphical/request/1248/sample" class="button secondary  button-hide" style="
+    font-size:14px;
+    background-color: #259b24 !important;
     color: white !important;
+    margin: 5px 0px 0px 37px;
     "> <span class="blink"><svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" height="12" viewBox="0 0 23 20" width="17">
     <path d="M16 13h-3V3h-2v10H8l4 4 4-4zM4 19v2h16v-2H4z"></path>
     <path d="M0 0h24v24H0z" fill="none"></path>
 </svg>&nbsp;Request a sample</span></a>
+      </h1>
+         
+        <div class="medium-6" style="float: right;" >
+           
+           
             
              
 </div> 
      </div>
+
 	 <div>
 	 <div class="medium-12 columns">
     <div class="medium-8 columns ">     

@@ -245,8 +245,8 @@
   "@context": "http://schema.org",
   "@type": "Organization",
   "name": "Graphical Research",
-  "url": "https://www.graphicalresearch.com",
-  "logo": "https://www.graphicalresearch.com/assets/images/brand-name.jpg",
+  "url": "<?php echo base_url('') ?>",
+  "logo": "<?php echo base_url('') ?>/assets/images/brand-name.jpg",
   "contactPoint": [{
     "@type": "ContactPoint",
     "telephone": "+91-020-65228555",
@@ -293,44 +293,44 @@
           <ul class="menu menu-menubar" style="
     margin-top: 4px !important;
 ">
-              <a href="https://www.graphicalresearch.com/" style="float: left;">  <li class="menu-text text-title " role="menuitem" >
+              <a href="<?php echo base_url('') ?>" style="float: left;">  <li class="menu-text text-title " role="menuitem" >
                 
-             <img src="https://www.graphicalresearch.com/assets/images/brand-name.jpg" style="height:51px;margin-left: 13px; ">
+             <img src="<?php echo base_url('') ?>/assets/images/brand-name.jpg" style="height:51px;margin-left: 13px; ">
                 
                      </li>  </a>
-              <li class="report-menu-mobile " style="display:inline-block;margin-top:16px;margin-left: 75px;"><a href="https://www.graphicalresearch.com/industry-insights" style="
+              <li class="report-menu-mobile " style="display:inline-block;margin-top:16px;margin-left: 75px;"><a href="<?php echo base_url('') ?>industry-insights" style="
     font-family: inherit;
     font-weight: 400;
     transform: initial;
 	font-size:17px;
   
 ">Industry Reports</a></li> 
-                <li class="report-menu-mobile" style="display:inline-block;margin-top:16px;"><a href="https://www.graphicalresearch.com/our-services" style="
+                <li class="report-menu-mobile" style="display:inline-block;margin-top:16px;"><a href="<?php echo base_url('') ?>our-services" style="
     font-family: inherit;
     font-weight: 400;
     transform: initial;
     font-size: 17px;
 ">Services</a></li>
-                 <li class="report-menu-mobile" style="display:inline-block;margin-top:16px"><a href="https://www.graphicalresearch.com/press-release" style="
+                 <li class="report-menu-mobile" style="display:inline-block;margin-top:16px"><a href="<?php echo base_url('') ?>press-release" style="
     font-family: inherit;
     font-weight: 400;
     transform: initial;
     font-size: 17px;
 ">Press Release</a></li>
-                   <li class="report-menu-mobile " style="display:inline-block;margin-top:16px;"><a href="https://www.graphicalresearch.com/contact-us" style="
+                   <li class="report-menu-mobile " style="display:inline-block;margin-top:16px;"><a href="<?php echo base_url('') ?>contact-us" style="
     font-family: inherit;
     font-weight: 400;
     transform: initial;
     font-size: 17px;
 ">Contact us</a></li>              
-                    <li class="report-menu-mobile" style="display:inline-block;margin-top:16px;"> <a href="https://www.graphicalresearch.com/about-us" style="
+                    <li class="report-menu-mobile" style="display:inline-block;margin-top:16px;"> <a href="<?php echo base_url('') ?>about-us" style="
     font-family: inherit;
     font-weight: 400;
     transform: initial;
     font-size: 17px;
 ">About us</a></li>
                     
-                    <li style="display:inline-block;margin-bottom:-17px;"> <form class="hero-search-filter-form onoff" action="https://www.graphicalresearch.com/search" method="get">
+                    <li style="display:inline-block;margin-bottom:-17px;"> <form class="hero-search-filter-form onoff" action="<?php echo base_url('') ?>/search" method="get">
 
                                <input id="search_data" name="findtext" class="hero-search-filter-form-find responsive-input" type="text" value="" placeholder="Search Report" onkeyup="liveSearch()" autocomplete="off" style="height: 45px;border:1px solid #1769aa;width: 316px;">
                                 <button class="button search-btn-back responsive-button" style="

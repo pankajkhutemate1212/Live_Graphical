@@ -368,14 +368,41 @@ function closeNav() {
     <div class="medium-8 columns ">     
      <div class="z-depth-1">
 				<div class="cust-tab-details-div">
-                <a href="<?php echo base_url('industry-insights/'.$reports['id'].'/'.$reports['url']) ?>" class=" button-size raised-button ink cust-tab-details report-menu-name  <?php if(!empty($RD)){echo 'is-active'; }  ?>" style="position: unset;font-size:14px;    background-color: #0274b3 !important;
-    color: white !important;box-shadow: 1px 1px 14px 3px #00000029;margin:0;width: 23%;
+                <a href="<?php echo base_url('industry-insights/'.$reports['id'].'/'.$reports['url']) ?>" class=" button-size raised-button ink cust-tab-details report-menu-name  <?php if(!empty($RD)){echo 'is-active'; }  ?>" style="position: unset;
+    font-size:14px;
+    background-color: #0274b3 !important;
+    color: white !important;
+    box-shadow: 1px 1px 14px 3px #00000029;
+    margin:0;
+    width: 23%;
+    /* font-weight: 100; */
+    font-weight: normal !important;
+    height: 37px;
+    
     ">Summary</a>
-                <a id="a1" href="<?php echo base_url('table-of-content/'.$reports['id'].'/'.$reports['url'].'') ?>" class=" button-size raised-button ink cust-tab-details report-menu-name <?php if(!empty($isactive)){echo 'is-active'; }  ?>" style="position: unset;font-size:14px;    background-color: #0274b3 !important;
-    color: white !important;box-shadow: 1px 1px 14px 3px #00000029;margin:0;width: 23%;
+                <a id="a1" href="<?php echo base_url('table-of-content/'.$reports['id'].'/'.$reports['url'].'') ?>" class=" button-size raised-button ink cust-tab-details report-menu-name <?php if(!empty($isactive)){echo 'is-active'; }  ?>" style="
+    position: unset;
+    font-size:14px;
+    background-color: #0274b3 !important;
+    color: white !important;
+    box-shadow: 1px 1px 14px 3px #00000029;
+    margin:0;
+    width: 23%;
+    height: 37px;
+    font-weight: normal !important;
+    
     ">Table of Contents</a>
-                <a id="a4" href="<?php echo base_url('request/'.$reports['id'].'/customize-this-report') ?>" class=" button-size raised-button ink cust-tab-details report-menu-name report-detail-option" style="position: unset;font-size:14px;    background-color: #0274b3 !important;
-    color: white !important;box-shadow: 1px 1px 14px 3px #00000029;margin:0;width: 29%;">&nbsp;Customized Report</a>
+                <a id="a4" href="<?php echo base_url('request/'.$reports['id'].'/customize-this-report') ?>" class=" button-size raised-button ink cust-tab-details report-menu-name report-detail-option" style="
+    position: unset;
+    font-size:14px;
+    background-color: #0274b3 !important;
+    color: white !important;
+    box-shadow: 1px 1px 14px 3px #00000029;
+    margin:0;
+    width: 29%;
+    height: 37px;
+    font-weight: normal !important;
+    ">&nbsp;Customized Report</a>
                 <a id="a4" href="<?php echo base_url('request/'.$reports['id'].'/inquiry-before-buying'); ?>" class="raised-button ink cust-tab-details report-menu-name report-detail-option button-hide" style="position: unset;font-size:14px;    background-color: #0274b3 !important;
     color: white !important;box-shadow: 1px 1px 14px 3px #00000029;margin:0;width: 27%;">
                    &nbsp;
@@ -528,14 +555,14 @@ if(stripos($aaa,'</p>
           </div><br/>
          <div class="cust-tab-details-div">
         <a href="<?php echo base_url('industry-insights/'.$reports['id'].'/'.$reports['url']) ?>" class=" button-size raised-button ink cust-tab-details report-menu-name  <?php if(!empty($RD)){echo 'is-active'; }  ?>" style="position: unset;font-size:14px;    background-color: #0274b3 !important;
-    color: white !important;box-shadow: 1px 1px 14px 3px #00000029;margin:0;width: 23%;
+    color: white !important;box-shadow: 1px 1px 14px 3px #00000029;margin:0;width: 23%;height: 37px;
     ">Summary</a>
   <a id="a1" href="<?php echo base_url('table-of-content/'.$reports['id'].'/'.$reports['url'].'') ?>" class=" button-size raised-button ink cust-tab-details report-menu-name <?php if(!empty($isactive)){echo 'is-active'; }  ?>" style="position: unset;font-size:14px;    background-color: #0274b3 !important;
-    color: white !important;box-shadow: 1px 1px 14px 3px #00000029;margin:0;width: 23%;
+    color: white !important;box-shadow: 1px 1px 14px 3px #00000029;margin:0;width: 23%;height: 37px;
     ">Table of Contents</a>
            
           <a id="a4" href="<?php echo base_url('request/'.$reports['id'].'/customize-this-report') ?>" class=" button-size raised-button ink cust-tab-details report-menu-name report-detail-option" style="position: unset;font-size:14px;    background-color: #0274b3 !important;
-    color: white !important;box-shadow: 1px 1px 14px 3px #00000029;margin:0;width: 29%;">&nbsp;Customized Report</a>
+    color: white !important;box-shadow: 1px 1px 14px 3px #00000029;margin:0;width: 29%;height: 37px;">&nbsp;Customized Report</a>
 
 </div>
         </div>

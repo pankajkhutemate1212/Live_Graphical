@@ -278,7 +278,7 @@
         </div>
  
     </header>
-      <header class="header-style">
+      <header class="">
           <div class="row">
 
 	<div class="top-bar">

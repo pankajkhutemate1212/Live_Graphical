@@ -110,6 +110,12 @@
         
     }
 
+
+@media (max-width: 767px) {
+
+.header-style { display: none; }
+}    
+
     @media only screen and (max-width:768px)
     {
         
@@ -278,7 +284,7 @@
         </div>
  
     </header>
-      <header class="">
+      <header class="header-style">
           <div class="row">
 
 	<div class="top-bar">

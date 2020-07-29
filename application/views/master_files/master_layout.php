@@ -295,7 +295,7 @@
 ">
               <a href="<?php echo base_url('') ?>" style="float: left;">  <li class="menu-text text-title " role="menuitem" >
                 
-             <img src="<?php echo base_url('') ?>/assets/images/brand-name.jpg" style="height:51px;margin-left: 13px; ">
+             <img src="<?php echo base_url('') ?>/assets/images/brand-name.jpg" style="height:51px; ">
                 
                      </li>  </a>
               <li class="report-menu-mobile " style="display:inline-block;margin-top:16px;margin-left: 75px;"><a href="<?php echo base_url('') ?>industry-insights" style="
@@ -369,7 +369,7 @@
   
  
 
-<div class="row medium-12 small-12  columns" style="">
+<div class="row medium-12 small-12" style="margin-top: 2px;">
 
   <div class="medium-4  small-4 columns">
     <p><a href="https://graphicalresearch.com/"><span> <img src="https://graphicalresearch.com/assets/images/brand-name.jpg" style="height: 50px;/* padding: 0 0px; */margin: 3px 0px;"></span></a></p>
@@ -379,7 +379,7 @@
     display: inline-block;
 "><form class="hero-search-filter-form onoff" action="https://graphicalresearch.com/search" method="get">
 
-                                <input id="search_data_mobile" name="findtext" class="hero-search-filter-form-find responsive-input" type="text" value="" placeholder="Search Report" onkeyup="liveSearchMobile()" autocomplete="off" style="/* height: 45px; *//* border:1px solid #1769aa; */width: 116px; margin-left: -33px;margin-top: -4px;">
+                                <input id="search_data_mobile" name="findtext" class="hero-search-filter-form-find responsive-input" type="text" value="" placeholder="Search Report" onkeyup="liveSearchMobile()" autocomplete="off" style="/* height: 45px; *//* border:1px solid #1769aa; */width: 173px;margin-left: -57px;margin-top: -4px;">
                                 <button class="button search-btn-back responsive-button" style="
    
    /* margin-left: -54px; */

@@ -325,7 +325,7 @@ function closeNav() {
 }
 </script>
 <div class="row">
-  <div class="small-12 medium-12 columns">
+  <div class="small-12 medium-12 ">
       <div class=" breadcrumbs"> 
      
             <ul>
@@ -337,7 +337,7 @@ function closeNav() {
 
      
 
-    <div class="medium-12 small-12 columns">
+    <div class="medium-12 small-12">
         <h1 class="market-research-report-title" style="/* padding-top: 0; */padding: 0px 16px;"><?php echo $reports['name']; ?><br> 
           <span class="text-caption">
              Published Date: <?php echo date('F Y',$reports['publish_date']);?> | Publisher: Graphical Research 
@@ -364,7 +364,7 @@ function closeNav() {
      </div>
 
 	 <div>
-	 <div class="medium-12 columns">
+	 <div class="medium-12">
     <div class="medium-8 columns ">     
      <div class="z-depth-1">
 				<div class="cust-tab-details-div">

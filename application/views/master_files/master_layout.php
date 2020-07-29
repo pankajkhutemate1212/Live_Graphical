@@ -95,7 +95,7 @@
 }
 
 @media screen and (min-height: 450px) {
-  .sidenav {padding-top: 15px;}
+  .sidenav {padding-top:;}
   .sidenav a {font-size: 18px;}
     
 }

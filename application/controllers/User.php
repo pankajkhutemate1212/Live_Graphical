@@ -19,6 +19,7 @@ $this->load->view("register_view");
 }
 public function login()
 {
+
 $rules = array(array('field'=>'l_email','label'=>'Email','rules'=>'required|valid_email'),
 array('field'=>'l_pass','label'=>'Password','rules'=>'required'));
 $this->form_validation->set_rules($rules);

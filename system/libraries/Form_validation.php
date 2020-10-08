@@ -1241,9 +1241,9 @@ class CI_Form_validation {
 	 */
 	public function valid_email($str)
 	{
-		if (function_exists('idn_to_ascii') && $atpos = strpos($str, '@'))
+		if (function_exists('INTL_IDNA_VARIANT_UTS46') && $atpos = strpos($str, '@'))
 		{
-			$str = substr($str, 0, ++$atpos).idn_to_ascii(substr($str, $atpos));
+			$str = substr($str, 0, ++$atpos).INTL_IDNA_VARIANT_UTS46(substr($str, $atpos));
 		}
 
 		return (bool) filter_var($str, FILTER_VALIDATE_EMAIL);

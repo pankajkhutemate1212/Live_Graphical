@@ -1,10 +1,10 @@
 <?php
-class CustomeTOC extends CI_Controller
+class Customtoc extends CI_Controller
 {
     public function __construct()
     {
         parent::__construct();
-         $this->load->library('csvimport');
+        $this->load->library('csvimport');
              $this->load->helper('url');
         $this->load->helper(array('form','url'));
         $this->load->library(array( 'form_validation', 'email'));
@@ -252,7 +252,3 @@ function  str2int_fromchapertstr($string){
     }
     
 } ?>
-
-
-
-

@@ -7,7 +7,7 @@ class Newreport extends CI_controller{
     public function index(){
         
 
-        $this->load->library('form_validation');
+         $this->load->library('form_validation');
 
         $this->form_validation->set_rules('rid', 'ReportID', 'required');
         //$this->form_validation->set_rules('isbn', 'ISBN', 'required');
@@ -22,8 +22,14 @@ class Newreport extends CI_controller{
 
         if ($this->form_validation->run() == FALSE)
         {
-            $this->load->view('admin/_layout_newreport');
-            //if(($this->session->userdata('user_id')!=""))
+
+
+
+                $this->load->view('admin/_layout_newreport');
+
+
+
+//if(($this->session->userdata('user_id')!=""))
 
 //redirect(site_url('admin/newreport'));
 //$this->load->view('admin/_layout_newreport');
@@ -34,8 +40,10 @@ class Newreport extends CI_controller{
         else
         {
             $this->load->model('model_newreport');
+
             $result = $this->model_newreport->insert_report();
-             if($result)
+
+     if($result)
         {
             $this->load->view('formsuccess');
 

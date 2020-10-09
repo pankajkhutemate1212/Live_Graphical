@@ -60,9 +60,14 @@ $route['our-services'] = 'pages/service';
 $route['our-services/amp'] = 'pages/amp_service';
 //$route['methodology'] = 'pages/methodology';
 $route['detail'] = 'reports/detail';
+
 //$route['industry-practices'] = 'reports/index'; methodology/detail
 
 //admin auth
+
+//custom_toc
+
+$route['custom_toc'] = '';
 
 
 //$route['contact-us'] = 'samples/Contact_US';
@@ -148,6 +153,8 @@ $route['blogs/(:any)/amp'] = 'blogs/blog_detail_amp/$1';
 $route['upcomingreports'] = 'upcomingreports/index';
 $route['upcomingreports/(:any)'] = 'upcomingreports/ongoing_detail/$1';
 
+//custom toc
+$route['customtoc'] = 'customtoc/index';
 
 //Payment Process
 

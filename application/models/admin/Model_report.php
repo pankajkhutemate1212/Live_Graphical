@@ -57,9 +57,7 @@ class Model_report extends CI_model
 
         $mix_editor = $this->input->post('mix_editor');
 
-
-
-        $s_price = $this->input->post('s_price');
+         $s_price = $this->input->post('s_price');
 
         $m_price = $this->input->post('m_price');
 
@@ -84,6 +82,8 @@ class Model_report extends CI_model
          if($this->db->affected_rows() == 1)
 
          {
+
+           
 
             $this->load->view('admin/db_updated');
 
